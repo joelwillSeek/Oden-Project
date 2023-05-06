@@ -11,12 +11,16 @@
         *{
             box-sizing: border-box;
         }
+        body{
+            margin: 0;
+            height: 100vh;
+        }
         .container{
             display: flex;
             max-width: 100%;
             flex-direction: column;
             flex-wrap: nowrap;
-            height: 100vh;
+            height: 100%;
         }
         .left{
             float: left;
@@ -28,13 +32,12 @@
             max-width: 100%;
             padding: 10px;
             margin: 10px;
-            border: 1px solid olive;
         }
-        .container .navbar ul{
+        ul{
             list-style: none;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        .container .navbar  ul  li{
+        ul  li{
             display: inline-block;
             margin: 0 10px;
             font-size: small;
@@ -45,6 +48,7 @@
         .container .landingpage{
             display: flex;
             flex-direction: column;
+            margin: 185px;
             justify-content: center;
             align-items: center;
         }
@@ -77,7 +81,9 @@
         /*landing page end*/
         /*footer start*/
         .container .footer{
-
+            background-color: #EDEDED;
+            font-size: smaller;
+            font-weight: lighter;
         }
         /*footer end*/
     </style>
@@ -97,9 +103,9 @@
         <div class="landingpage">
             <img src="logo.png" alt="Odin project" class="icon">
             <input type="search">
-            <div class="containflex"><button>Do the thing!</button>
+            <div class="containflex">
+                <button>Do the thing!</button>
                 <button>Do the other thing!</button></div>
-            
         </div>
         <div class="footer">
             <ul class="left">
